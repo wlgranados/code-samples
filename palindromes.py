@@ -8,6 +8,7 @@ Hint: Check the count_palindromes function
 
 import sys
 
+
 def is_palindrome(string):
     '''
     Checks if a string is a palindrome. Palindromes are strings that are
@@ -49,7 +50,7 @@ def count_palindromes(input_file):
         line = line.rstrip()
         # Checks if each line is a palindrome
         if is_palindrome(line):
-            total_palindromes = 0
+            total_palindromes += 1
     return total_palindromes
 
 
